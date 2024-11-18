@@ -1,0 +1,494 @@
+$gray: #E3E3E3
+$magenta: #FF267E
+$light-blue: #47D2FF
+$green: #05C48A
+$green-hover: #05b37c
+$violet: #FF267E33
+$blue: #00003D
+$light-gray: #E8E8E8
+$white: #FFFFFF
+
+
+$font-suisse-regular: SuisseIntl-Regular, sans-serif // 400 //
+$font-suisse-semb: SuisseIntl-SemiBold, sans-serif // 600 //
+$font-suisse-bold: SuisseIntl-Bold, sans-serif // 700 //
+$font-robotoCond-bold: RobotoCondensed-Bold, sans-serif // 700 //
+
+.overflow
+  overflow-x: hidden !important
+
+body
+  background: $blue
+  &._lock
+    overflow: hidden
+  img
+    max-width: 100%
+    height: auto
+
+.container
+  max-width: 1290px
+  position: relative
+  margin: 0 auto
+
+.promotion
+  position: relative
+  overflow-x: hidden
+  &__stars
+    position: absolute
+    left: 67%
+    top: -347px
+    width: 78%
+    //animation: firework 5s ease-out infinite
+    //opacity: 0
+  &__h2
+    font-family: $font-suisse-bold
+    color: $magenta
+    font-size: 48px
+    line-height: 48px
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 50px
+  &__info
+    display: flex
+    width: 104%
+    position: relative
+    &-left
+      margin-right: -118px
+      padding-top: 33px
+      display: flex
+      flex-direction: column
+      z-index: 1
+    &-right
+      max-width: 743px
+      position: relative
+      z-index: 1
+    &-lineB
+      position: absolute
+      left: 0
+      top: -88px
+      min-width: 1928px
+    &-lineM
+      position: absolute
+      left: -297px
+      top: 51px
+      min-width: 1928px
+  &__logo
+    width: 661px
+    height: 169px
+    align-self: flex-end
+    margin-bottom: 70px
+    margin-left: 53px
+  &__txt
+    display: flex
+    flex-direction: column
+    margin-bottom: 85px
+    &-btn
+      margin-left: 153px
+  &__title
+    display: flex
+    flex-direction: column
+    margin-bottom: 18px
+    align-self: center
+    &-item
+      color: $magenta
+      font-size: 80px
+      line-height: 70px
+      font-family: $font-suisse-bold
+      text-transform: uppercase
+      &:nth-child(1)
+        color: $white
+        font-size: 84px
+        transform: translateX(-100%)
+        animation: slideInLeft 1s forwards
+        opacity: 0
+      &:nth-child(2)
+        align-self: center
+        transform: translateX(100%)
+        animation: slideInRight 1s forwards
+        opacity: 0
+      &:nth-child(3)
+        transform: translateX(100%)
+        animation: slideInRight 1s forwards
+        opacity: 0
+  &__date
+    display: flex
+    flex-direction: column
+    &-item
+      color: $magenta
+      font-size: 20px
+      font-family: $font-suisse-bold
+      text-transform: uppercase
+      padding: 9px 16px 7px
+      border-radius: 5px
+      width: max-content
+      animation: fadeIn 1.5s ease-in forwards
+      &:nth-child(1)
+        color: $light-blue
+        align-self: center
+        border: 4px solid #47D2FF
+        box-shadow: 0px 2px 3px #29ABE2, inset 0px 0px 5px #29ABE2, inset 0px 3px 5px #29ABE2
+        text-shadow: 1px 1px 3px #29ABE2
+        margin-bottom: 6px
+      &:nth-child(2)
+        margin-left: 100px
+        border: 4px solid $magenta
+        box-shadow: 0px 2px 3px #FF7BB16B, inset 0px 0px 5px #FF7BB16B, inset 0px 3px 5px #FF7BB16B
+        text-shadow: 1px 1px 3px #FF7BB16B
+
+  &__regBtn
+    padding: 31px 74px 27px
+    border-radius: 4px
+    background: $green
+    box-shadow: 0px 0px 23px 0px #05C489
+    font-size: 24px
+    font-family: $font-suisse-semb
+    color: $blue
+    letter-spacing: 1.92px
+    text-transform: uppercase
+    display: block
+    width: max-content
+    &:hover
+      background-color: $green-hover
+      transition: all 0.3s ease
+      box-shadow: 0px 0px 23px 0px #05b37c
+
+  &__enterBtn
+    position: absolute
+    display: flex
+    top: 30px
+    right: 90px
+    font-family: $font-robotoCond-bold
+    color: $white
+    font-size: 14px
+    text-transform: uppercase
+    padding: 11px 16px 10px
+    border-radius: 2px
+    border: 1px solid #FFF
+    &:hover
+      background-color: $white
+      color: $blue
+      transition: all 0.3s ease
+
+  &__instructions
+    max-width: 1156px
+    margin: -110px auto 115px
+    z-index: 2
+    position: relative
+    &-container
+      display: flex
+      justify-content: space-between
+      margin-bottom: 60px
+    &-btn
+      margin: 0 auto 60px
+  &__step
+    display: flex
+    position: relative
+    border-radius: 8px
+    padding: 9px 20px 7px 90px
+    background-color: $violet
+    width: 352px
+    &:nth-child(1)
+      .promotion__step-number
+        animation-delay: 2s
+    &:nth-child(2)
+      .promotion__step-number
+        animation-delay: 4s
+    &:nth-child(3)
+      .promotion__step-number
+        animation-delay: 6s
+    &-number
+      width: 93px
+      position: absolute
+      left: -11px
+      top: -14px
+      animation: jump 2s ease-in-out infinite
+      animation-iteration-count: 1
+    &-text
+      display: flex
+      flex-direction: column
+      .step
+        &-top
+          font-family: $font-suisse-bold
+          color: $magenta
+          font-size: 24px
+          text-transform: uppercase
+        &-bottom
+          font-family: $font-suisse-regular
+          color: $gray
+          font-size: 24px
+  &__winnings
+  display: flex
+  flex-direction: column
+  .prize
+    display: flex
+    justify-content: space-between
+    padding: 0 195px
+    align-items: flex-end
+    position: relative
+    &__item
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      &:nth-child(1)
+        .prize__item-img
+          width: 150px
+      &:nth-child(2)
+        .prize__item-img
+          width: 170px
+      &:nth-child(3)
+        .prize__item-img
+          width: 190px
+      &:nth-child(4)
+        .prize__item-img
+          width: 210px
+      &-money
+        font-family: $font-suisse-bold
+        font-size: 48px
+        text-shadow: 0px 2px 10.2px #00B3FF, 0px 2px 23.3px #0679AA
+        letter-spacing: -2.4px
+        text-transform: uppercase
+        color: $light-blue
+      &-ftd
+        font-family: $font-suisse-bold
+        font-size: 36px
+        letter-spacing: -1.8px
+        text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25)
+        color: $gray
+    &-dollar
+      position: absolute
+      width: 1029px
+      left: -788px
+      bottom: -338px
+    &-procent
+      position: absolute
+      width: 1220px
+      right: -959px
+      bottom: -779px
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideInLeft
+  0%
+    opacity: 0
+    transform: translateX(-100%)
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+@keyframes slideInRight
+  0%
+    opacity: 0
+    transform: translateX(100%)
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes jump
+  0%, 100%
+    transform: translateY(0)
+  25%, 75%
+    transform: translateY(-15px)
+  50%
+    transform: translateY(0px)
+
+//@keyframes firework
+//  0%
+//    transform: scale(0.5)
+//    opacity: 1
+//  50%
+//    transform: scale(1)
+//    opacity: 1
+//  100%
+//    transform: scale(1)
+//    opacity: 0
+
+
+
+
+
+
+//.bonus
+//  overflow: hidden
+//  padding: 240px 0 230px
+//  &__row
+//    display: flex
+//    align-items: center
+//  &__info
+//    position: relative
+//    z-index: 4
+//    padding-top: 60px
+//  &__text-mob
+//    display: none
+//  &__text
+//    display: flex
+//    flex-direction: column
+//    align-items: flex-start
+//    color: $new-gray
+//    text-transform: uppercase
+//    font-size: 66px
+//    line-height: 80px
+//    margin: 0 0 50px 0
+//    &-top
+//      padding: 4.5px 14px 2.5px
+//      background: $magenta
+//      font-family: $font-suisse-med
+//    &-bottom
+//      position: relative
+//      top: -5px
+//      padding: 4.5px 14px 2.5px
+//      background: $magenta
+//      font-family: $font-suisse-med
+//      span
+//        font-family: $font-wulkan
+//  &__buttons
+//    display: flex
+//    align-items: center
+//    margin: 0 0 95px 0
+//    &-item
+//      display: flex
+//      &-link
+//        margin: 0 15px 0 0
+//        height: 68px
+//        padding: 0 16px
+//        display: flex
+//        align-items: center
+//        justify-content: center
+//        border-radius: 5px
+//        background: $white
+//        transition: background-color .3s ease
+//        &:hover
+//          background: $new-gray
+//        img
+//          max-width: 180px
+//      &-qr
+//        height: 68px
+//        width: 68px
+//        &-appstore
+//          background: url("../img/appstore-qr.png") no-repeat 0 0/contain
+//        &-googleplay
+//          background: url("../img/googleplay-qr.svg") no-repeat 0 0/contain
+//    &-vs
+//      margin: 0 20px
+//  &__image
+//    position: absolute
+//    right: -325px
+//    top: -460px
+//    &-wrap
+//      position: relative
+//      width: 1038px
+//      height: 1316px
+//      background: url("../img/bg-mob-desk.png") no-repeat 0 0/contain
+//      @media screen and (max-width: 650px)
+//        background: url("../img/bg-mob-mob.png") no-repeat 0 0/contain
+//    &-phoneOne
+//      animation: 8s ease-in-out mobOne-anim infinite
+//      position: absolute
+//      width: 456px
+//      height: 709px
+//      bottom: 115px
+//      left: 225px
+//      z-index: 2
+//
+//    &-phoneTwo
+//      animation: 8s ease-in-out mobTwo-anim infinite
+//      position: absolute
+//      width: 456px
+//      height: 709px
+//      top: 330px
+//      left: 395px
+//      z-index: 1
+//
+//    &-elemOne
+//      animation: 11s ease-in-out elemOne-anim infinite
+//      position: absolute
+//      width: 200px
+//      height: 200px
+//      top: 480px
+//      right: 190px
+//      z-index: 1
+//      background: url("../img/elem1-desk.png") no-repeat 0 0/contain
+//      @media screen and (max-width: 650px)
+//        background: url("../img/elem1-mob.png") no-repeat 0 0/contain
+//    &-elemTwo
+//      animation: 6s ease-in-out elemTwo-anim infinite
+//      position: absolute
+//      width: 178px
+//      height: 178px
+//      top: 310px
+//      left: 290px
+//      z-index: 1
+//      background: url("../img/elem2-desk.png") no-repeat 0 0/contain
+//      @media screen and (max-width: 650px)
+//        background: url("../img/elem2-mob.png") no-repeat 0 0/contain
+//    &-elemThree
+//      animation: 9s ease-in-out elemThree-anim infinite
+//      position: absolute
+//      width: 260px
+//      height: 250px
+//      bottom: 224px
+//      right: 256px
+//      z-index: 4
+//      background: url("../img/elem3-desk.png") no-repeat 0 0/contain
+//      @media screen and (max-width: 650px)
+//        background: url("../img/elem3-mob.png") no-repeat 0 0/contain
+//
+//
+//
+//@keyframes mobOne-anim
+//  0%
+//    transform: translateY(0)
+//  50%
+//    transform: translateY(-45px)
+//  100%
+//    transform: translateY(0)
+//
+//@keyframes mobTwo-anim
+//  0%
+//    transform: translateY(0)
+//  50%
+//    transform: translateY(45px)
+//  100%
+//    transform: translateY(0)
+//
+//@keyframes elemOne-anim
+//  0%
+//    transform: translate(0, 0)
+//  50%
+//    transform: translate(-9px, 45px)
+//  100%
+//    transform: translate(0, 0)
+//
+//
+//@keyframes elemTwo-anim
+//  0%
+//    transform: translate(0) scale(1)
+//  50%
+//    transform: translate(15px, -35px) scale(.95)
+//  100%
+//    transform: translateY(0) scale(1)
+//
+//@keyframes elemThree-anim
+//  0%
+//    transform: translate(0, 0)
+//  50%
+//    transform: translate(-9px, 35px)
+//  100%
+//    transform: translate(0, 0)
+
+
+
