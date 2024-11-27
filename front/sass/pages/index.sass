@@ -31,6 +31,7 @@ body
 
 .container
   //max-width: 1290px
+  overflow: hidden
   width: 100%
   position: relative
   margin: 0 auto
@@ -106,12 +107,12 @@ body
         color: $white
         font-size: 84px
         transform: translateX(-100%)
-        animation: slideInLeft 1s forwards
+        animation: slideInLeft 1.5s forwards
         opacity: 0
       &:nth-child(2)
         align-self: center
         transform: translateX(100%)
-        animation: slideInRight 1s forwards
+        animation: slideInRight 1.5s forwards
         opacity: 0
       &:nth-child(3)
         transform: translateX(100%)
@@ -162,10 +163,11 @@ body
     display: flex
     justify-content: center
     align-items: center
+    transition: all 0.2s ease
     &:hover
-      background-color: $green-hover
-      transition: all 0.3s ease
-      box-shadow: 0px 0px 23px 0px #05b37c
+      //background-color: $green-hover
+      //box-shadow: 0px 0px 23px 0px #05b37c
+      box-shadow: 0px 0px 33px 0px #05C489
   &__enterBtn
     height: 89px
     width: 214px
@@ -181,11 +183,13 @@ body
     letter-spacing: 1.92px
     text-transform: uppercase
     margin-left: 40px
+    transition: all 0.2s ease
     &:hover
-      background-color: $gray-second-hover
+      box-shadow: 0 0 33px 0 #FFF
+      //background-color: $gray-second-hover
   &__instructions
     width: 1156px
-    margin: -158px auto 115px
+    margin: -124px auto 115px
     z-index: 2
     position: relative
     &-container
