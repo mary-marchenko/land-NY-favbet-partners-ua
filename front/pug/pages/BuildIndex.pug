@@ -1,35 +1,4 @@
-//.bonus
-//    .container
-//        .bonus__row
-//            .bonus__info
-//                .bonus__text
-//                    .bonus__text-top RĂMÂI ÎN JOC
-//                    .bonus__text-bottom CU #[span APLICAȚIA] favbet
-//                .bonus__buttons
-//                    .bonus__buttons-item
-//                        a(href='https://apps.apple.com/ro/app/favbet-ro/id1114477310?l=ro').bonus__buttons-item-link.bonus__buttons-item-link-appstore
-//                            img(src='img/app-store.png' alt='appstore-link')
-//                        .bonus__buttons-item-qr.bonus__buttons-item-qr-appstore
-//                    .bonus__buttons-vs
-//                        img(src='img/vs.svg' alt='vs')
-//                    .bonus__buttons-item
-//                        a(href="https://play.google.com/store/apps/details?id=com.betinvest.favbet_3_ro&hl=en").bonus__buttons-item-link.bonus__buttons-item-link-googleplay
-//                            img(src='img/googleplay.png' alt='google-play-link')
-//                        .bonus__buttons-item-qr.bonus__buttons-item-qr-googleplay
-//            .bonus__image
-//                .bonus__image-wrap
-//                    .bonus__image-phoneTwo
-//                    .bonus__image-phoneOne
-//                    .bonus__image-elemOne
-//                    .bonus__image-elemTwo
-//                    .bonus__image-elemThree
-
 .promotion
-    picture.promotion__stars
-        source(media="(max-width: 600px)" srcset="img/stars-mob.png")
-        source(media="(max-width: 1024px)" srcset="img/stars-tab.png")
-        source(media="(min-width: 1025px)" srcset="img/stars-desk.png")
-        img(src="img/stars-desk.png" alt="christmas tree")
     .container
         section.promotion__info
             .promotion__info-left
@@ -42,17 +11,18 @@
                     .promotion__date
                         .promotion__date-item період акції з 01.12 по 31.12
                         .promotion__date-item підбиваємо підсумки 10.01
-                a(href='#').promotion__regBtn.promotion__txt-btn Реєстрація
+                a(href='https://favbet.partners/uk/user/register/').promotion__regBtn.promotion__txt-btn Реєстрація
             .promotion__info-right
+                picture.promotion__star
+                    source(media="(max-width: 767px)" srcset="img/star-mob.png")
+                    source(media="(max-width: 1024px)" srcset="img/star-tab.png")
+                    source(media="(min-width: 1025px)" srcset="img/star-desk.png")
+                    img(src="img/star-desk.png" alt="star")
                 picture.promotion__tree
-                    source(media="(max-width: 600px)" srcset="img/tree-mob.png")
+                    source(media="(max-width: 767px)" srcset="img/tree-mob.png")
                     source(media="(max-width: 1024px)" srcset="img/tree-tab.png")
                     source(media="(min-width: 1025px)" srcset="img/tree-desk.png")
                     img(src="img/tree-desk.png" alt="christmas tree")
-                a(href='#').promotion__enterBtn Вхід
-            img(src="img/spiral-blue.svg" alt="spiral").promotion__info-lineB
-
-            img(src="img/spiral-magenta.svg" alt="spiral").promotion__info-lineM
         section.promotion__instructions
             h2.promotion__h2 Як взяти участь?
             .promotion__instructions-container
@@ -71,10 +41,10 @@
                     .promotion__step-text
                         .step-top Крок
                         .step-bottom Вигравай призи
-            a(href='#').promotion__regBtn.promotion__instructions-btn Реєстрація
+            a(href='https://favbet.partners/uk/user/register/').promotion__regBtn.promotion__instructions-btn Реєстрація
 
         section.promotion__winnings
-            h2.promotion__h2 Гарантовані призи за виконання <br> кваліфікації
+            h2.promotion__h2 Гарантовані призи за виконання кваліфікації
             .prize
                 .prize__item
                     .prize__item-money 500 $
@@ -113,18 +83,66 @@
                             img(src="img/gift-desk.png" alt="gift box")
                     .prize__item-ftd 1 000 FTD
                 picture.prize-dollar
-                    source(media="(max-width: 600px)" srcset="img/dollar-mob.png")
+                    source(media="(max-width: 500px)" srcset="img/dollar-mob.png")
                     source(media="(max-width: 1024px)" srcset="img/dollar-tab.png")
                     source(media="(min-width: 1025px)" srcset="img/dollar-desk.png")
                     img(src="img/dollar-desk.png" alt="dollar")
                 picture.prize-procent
-                    source(media="(max-width: 600px)" srcset="img/procent-mob.png")
+                    source(media="(max-width: 500px)" srcset="img/procent-mob.png")
                     source(media="(max-width: 1024px)" srcset="img/procent-tab.png")
                     source(media="(min-width: 1025px)" srcset="img/procent-desk.png")
-                    img(src="img/procent-desk.png" alt="dollar")
-
-
+                    img(src="img/procent-desk.png" alt="procent")
+        .promotion__bg-bottom
         section.promotion__conditions
             h2.promotion__h2 Умови кваліфікації
+            ul.promotion__terms
+                li.promotion__terms-item
+                    img(src="img/ball.png" alt="ball").promotion__terms-img
+                    p.promotion__terms-txt Приймаємо трафік з фб, гугл (окрім бренд запитів) тікток, seo, baners, push, pops.
+                li.promotion__terms-item
+                    img(src="img/ball.png" alt="ball").promotion__terms-img
+                    p.promotion__terms-txt Зі 100% гравців не менше 70% повинні зробити повторний депозит за звітний період.
+                li.promotion__terms-item
+                    img(src="img/ball.png" alt="ball").promotion__terms-img
+                    p.promotion__terms-txt Зі 100% гравців не менше 70% повинні мати активність більше 2х днів за звітний період.
+                li.promotion__terms-item
+                    img(src="img/ball.png" alt="ball").promotion__terms-img
+                    p.promotion__terms-txt Заборонений мотивований трафік, фрод, мультиакаунти.
+                li.promotion__terms-item
+                    img(src="img/ball.png" alt="ball").promotion__terms-img
+                    p.promotion__terms-txt Бейслайн 100 грн.
+                li.promotion__terms-item
+                    img(src="img/ball.png" alt="ball").promotion__terms-img
+                    p.promotion__terms-txt В акції приймає участь трафік з України, підбивання підсумків відбудеться 24 грудня серед учасників, які пройдуть кваліфікацію. Всі переможці отримають особисте повідомлення від організатора акції в телеграм.
         section.promotion__summary
             h2.promotion__h2 Наливай FTD
+            ul.promotion__summary-container
+                li.promotion__summary-item
+                    .item-top Період акції
+                    .item-bottom з 01.12 по 31.12
+                li.promotion__summary-item
+                    .item-top Підбиваємо підсумки
+                    .item-bottom 10.01.2025
+                li
+                    a(href='href="https://t.me/favbet_affiliates"').promotion__summary-item
+                        .item-img.tg
+                        .item-top Запитуй у #[span телеграмі]
+                li
+                    a(href='href="https://favbet.partners"').promotion__summary-item
+                        .item-img.fb
+                        .item-top Відвідай наш #[span сайт]
+            .promotion__summary-buttons
+                a(href='#').promotion__regBtn Реєстрація
+                a(href='#').promotion__enterBtn Вхід
+            picture.promotion__summary-emoji
+                source(media="(max-width: 500px)" srcset="img/emoji-mob.png")
+                source(media="(max-width: 1024px)" srcset="img/emoji-tab.png")
+                source(media="(min-width: 1025px)" srcset="img/emoji-desk.png")
+                img(src="img/gift-desk.png" alt="gift box")
+            picture.promotion__summary-cocktail
+                source(media="(max-width: 500px)" srcset="img/cocktail-mob.png")
+                source(media="(max-width: 1024px)" srcset="img/cocktail-tab.png")
+                source(media="(min-width: 1025px)" srcset="img/cocktail-desk.png")
+                img(src="img/gift-desk.png" alt="gift box")
+
+
