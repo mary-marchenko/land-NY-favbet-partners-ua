@@ -111,6 +111,8 @@
           width: 265px
         &:nth-child(2)
           width: 280px
+        &.noios-padding
+          padding-top: 4px
     &__regBtn
       font-size: 20px
       width: 240px
@@ -193,7 +195,7 @@
       align-self: flex-start
       margin-bottom: 21px
     &__date
-      width: 84%
+      width: 296px
       &-item
         font-size: 14px
         height: 33px
@@ -453,6 +455,8 @@
   .promotion
     &__instructions
       margin-top: 10px
+    &__date
+      width: 292px
     .prize
       &-dollar
         bottom: 18px
@@ -469,7 +473,6 @@
         top: auto
         right: 34%
         width: 185px
-
 
 @media screen and (max-width: 630px)
   .promotion
@@ -490,7 +493,7 @@
           font-size: 36px
           line-height: 114%
     &__date
-      width: 100%
+      width: 90%
       &-item
         font-size: 14px
         height: 44px
@@ -506,6 +509,8 @@
           width: 144px
           box-shadow: 0px 1px 1px #FF7BB16B, inset 1px 0px 1px #FF7BB16B, inset 0px 1px 2px #FF7BB16B
           text-shadow: 1px 0.5px 1px #FF7BB16B
+        &.noios-padding
+          padding-top: 2px
     &__info
       &-left
         width: 63%
@@ -617,8 +622,17 @@
       &-cocktail
         right: auto
 
+@media screen and (max-width: 440px) and (min-width: 428px)
+  .promotion
+    &__date
+      &-item
+        &:nth-child(1)
+          margin-right: 37px
+
 @media screen and (max-width: 425px)
   .promotion
+    &__date
+      width: 100%
     &__info
       &-left
         width: 55%
@@ -658,7 +672,7 @@
       .prize
         width: 100%
         padding: 0
-        &-dollar,
+        //&-dollar,
         &-procent
           display: none
         &__item
@@ -666,9 +680,17 @@
             font-size: 16px
           &-ftd
             font-size: 13px
+
+@media screen and (max-width: 350px)
+  .promotion
+    &__winnings
+       .prize
+          &-dollar
+            display: none
     &__summary
       &-emoji
         display: none
+
 
 @media screen and (max-width: 303px)
   .promotion
